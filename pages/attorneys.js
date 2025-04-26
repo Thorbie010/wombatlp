@@ -3,21 +3,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
-import saheed from '../public/owner.jpeg'
-import annora from '../public/lawyer.jpeg'
+
 
 const attorneys = [
   {
     name: 'Saheed Sanni Esq',
     title: 'Founding Partner',
     // bio: 'Sophia has over 20 years of experience in corporate law, specializing in mergers and acquisitions.',
-    image: saheed,
+    image: '/owner.jpeg',
   },
   {
     name: 'Annora Ogunsanya',
     title: 'Managing Partner',
     // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-    image: annora,
+    image: '/lawyer.jpeg',
   },
 ]
 

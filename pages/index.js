@@ -4,8 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import Image from 'next/image'
-import hero from '../public/hero.jpeg'
-import logo from '../public/logo.png'
+
 
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
@@ -89,7 +88,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="relative h-screen w-full">
             <Image
-              src={hero}
+              src="/hero.jpeg"
               alt="Honoredge Legal Practices Hero Image"
               fill
               priority
@@ -109,7 +108,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="mb-6 flex justify-center">
                 <Image
-                  src={logo}
+                  src='/logo.png'
                   alt="Honoredge Legal Practices Logo"
                   width={100}
                   height={100}

@@ -3,10 +3,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import missionImg from '../public/mission.jpg'
-import visionImg from '../public/vision.jpg'
-import valuesImg from '../public/values.jpg'
-import focusImg from '../public/focus.jpg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -76,17 +72,17 @@ const About = () => {
               {
                 title: 'Our Mission',
                 text: 'To provide strategic, client-centered legal solutions rooted in integrity, innovation, and professionalism.',
-                image: missionImg,
+                image: '/mission.jpg',
               },
               {
                 title: 'Our Vision',
                 text: 'To be a transformative force in the legal industry by delivering legal services that empower individuals, businesses, and communities.',
-                image: visionImg,
+                image: '/vision.jpg',
               },
               {
                 title: 'Our Values',
                 text: 'Integrity, Diligence, Excellence, Empathy, and Innovation form the pillars of everything we do.',
-                image: valuesImg,
+                image: '/values.jpg',
               },
             ].map((section, i) => (
               <motion.div
@@ -120,7 +116,7 @@ const About = () => {
           >
             <h2 className="text-3xl font-semibold text-gray-900 font-garamond mb-6">Our Focus Areas</h2>
             <div className="h-64 w-full relative rounded-2xl overflow-hidden shadow-md mb-10">
-              <Image src={focusImg} alt="Our Practice" fill className="object-cover" />
+              <Image src='/focus.jpg' alt="Our Practice" fill className="object-cover" />
             </div>
           </motion.div>
 
