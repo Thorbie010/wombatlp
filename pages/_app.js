@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:site" content="@honoredgelp" />
 
         {/* Favicon */}
-        <link rel="icon" href="https://www.honoredgelp.vercel.app/logo.png" />
+        <link rel="icon" href="/logo.png" />
 
         {/* Robots Meta Tag */}
         <meta name="robots" content="index, follow" />
