@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Head from 'next/head'
 import Layout from '../components/Layout'
 import missionImg from '../public/mission.jpg'
 import visionImg from '../public/vision.jpg'
@@ -49,6 +50,9 @@ const About = () => {
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen py-20 px-6">
+        <Head>
+          <title>Honoredge Legal Practices | About Us</title>
+        </Head>
         <div className="max-w-6xl mx-auto space-y-20">
 
           {/* Header */}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
@@ -37,6 +38,9 @@ const Attorneys = () => {
   return (
     <Layout >
       <div className="bg-gray-100 min-h-screen py-20 px-4">
+        <Head>
+          <title>Honoredge Legal Practices | Attorneys</title>
+        </Head>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">

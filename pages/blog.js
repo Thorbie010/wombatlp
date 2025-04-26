@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Head from 'next/head'
 import { client, urlFor } from '../lib/sanity'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -34,6 +35,9 @@ export async function getStaticProps() {
 export default function Blog({ posts }) {
   return (
     <Layout>
+        <Head>
+          <title>Honoredge Legal Practices | Blog</title>
+        </Head>
       <div className="max-w-5xl mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-8">Blog Posts</h1>
         <div className="space-y-10">

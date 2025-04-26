@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Layout from '../components/Layout'
 import { Mail, Phone, MapPin } from 'lucide-react'
@@ -20,6 +21,9 @@ const Contact = () => {
   return (
     <Layout>
       <div className="bg-gray-50 py-20 px-4 min-h-screen">
+        <Head>
+          <title>Honoredge Legal Practices | Contact Us</title>
+        </Head>
         <div className="max-w-7xl mx-auto space-y-16">
           {/* Header */}
           <motion.div

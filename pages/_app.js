@@ -15,27 +15,27 @@ function MyApp({ Component, pageProps }) {
 
         {/* Open Graph Meta Tags for Social Media */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Seridan Partners | Trusted Legal Advisors" />
+        <meta property="og:title" content="Honoredge Legal Practices | Trusted Legal Advisors" />
         <meta
           property="og:description"
-          content="Seridan Partners offers expert legal services across Corporate Law, Real Estate, Litigation, and more. Get tailored legal solutions today."
+          content="Honoredge Legal Practices offers expert legal services across Corporate Law, Real Estate, Litigation, and more. Get tailored legal solutions today."
         />
-        <meta property="og:image" content="https://www.seridanpartners.vercel.app/hero.jpeg" />
-        <meta property="og:url" content="https://www.seridanpartners.vercel.app" />
-        <meta property="og:site_name" content="Seridan Partners" />
+        <meta property="og:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
+        <meta property="og:url" content="https://www.honoredgelp.vercel.app" />
+        <meta property="og:site_name" content="Honoredge Legal Practices" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Seridan Partners | Trusted Legal Advisors" />
+        <meta name="twitter:title" content="Honoredge Legal Practices | Trusted Legal Advisors" />
         <meta
           name="twitter:description"
-          content="Seridan Partners offers expert legal services in various fields, providing clients with solutions tailored to their needs."
+          content="Honoredge Legal Practices offers expert legal services in various fields, providing clients with solutions tailored to their needs."
         />
-        <meta name="twitter:image" content="https://www.seridanpartners.vercel.app/hero.jpeg" />
-        <meta name="twitter:site" content="@SeridanPartners" />
+        <meta name="twitter:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
+        <meta name="twitter:site" content="@honoredgelp" />
 
         {/* Favicon */}
-        <link rel="icon" href="https://www.seridanpartners.vercel.app/logo.png" />
+        <link rel="icon" href="https://www.honoredgelp.vercel.app/logo.png" />
 
         {/* Robots Meta Tag */}
         <meta name="robots" content="index, follow" />
@@ -53,19 +53,21 @@ function MyApp({ Component, pageProps }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              "name": "Seridan Partners",
-              "url": "https://www.seridanpartners.vercel.app",
-              "logo": "https://www.seridanpartners.com/logo.png",
+              "name": "Honoredge Legal Practices",
+              "url": "https://www.honoredgelp.vercel.app",
+              "logo": "https://www.honoredgelp.com/logo.png",
               "description":
-                "Top-tier legal services in Corporate Law, Real Estate, Litigation, and more.",
+                "Top-tier legal services in Corporate Law, Real Estate, Immigration, and more.",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Your City",
-                "addressCountry": "Your Country",
+                "addressLocality": "Lagos",
+                "addressCountry": "Nigeria",
+                "postalCode": "101001",
               },
               "sameAs": [
-                "https://twitter.com/SeridanPartners",
-                "https://www.linkedin.com/company/seridanpartners",
+                "https://twitter.com/honoredgelp",
+                "https://www.linkedin.com/company/honoredgelegalpractices",
+                "https://www.facebook.com/honoredgelp",
               ],
             }),
           }}
