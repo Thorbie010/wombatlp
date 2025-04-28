@@ -78,17 +78,17 @@ export default function AboutUs() {
               {
                 title: "Our Mission",
                 text: "We are committed to delivering innovative, client-focused legal solutions, grounded in integrity and excellence.",
-                image: "/mission.jpg",
+                image: "/mission.png",
               },
               {
                 title: "Our Vision",
                 text: "To redefine the legal landscape by empowering individuals and businesses through exceptional advocacy and trusted counsel.",
-                image: "/vision.jpg",
+                image: "/vision.png",
               },
               {
                 title: "Our Values",
                 text: "Integrity, diligence, excellence, empathy, and innovation are the core principles that guide every aspect of our practice.",
-                image: "/values.jpg",
+                image: "/values.png",
               }
             ].map((item, i) => (
               <motion.div
@@ -124,7 +124,7 @@ export default function AboutUs() {
             </h2>
 
             <div className="h-72 w-full relative rounded-2xl overflow-hidden shadow-md mb-14">
-              <Image src="/focus.jpg" alt="Our Practice Areas" fill className="object-cover" />
+              <Image src="/focus.png" alt="Our Practice Areas" fill className="object-cover" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-10">
