@@ -10,13 +10,13 @@ const attorneys = [
     name: 'Saheed Sanni Esq',
     title: 'Founding Partner',
     // bio: 'Sophia has over 20 years of experience in corporate law, specializing in mergers and acquisitions.',
-    image: '/owner.jpeg',
+    image: '/owner.png',
   },
   {
     name: 'Annora Ogunsanya',
     title: 'Managing Partner',
     // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-    image: '/lawyer.jpeg',
+    image: '/lawyer.png',
   },
 ]
 

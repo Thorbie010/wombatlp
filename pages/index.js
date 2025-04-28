@@ -85,7 +85,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="relative h-screen w-full">
             <Image
-              src="/hero.jpeg"
+              src="/hero.png"
               alt="Honoredge Legal Practice Hero Image"
               fill
               priority
