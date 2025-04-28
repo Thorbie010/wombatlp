@@ -17,7 +17,10 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Attorneys', 'Practice Areas', 'Blog', 'Contact'].map((item, idx) => (
+          <Link href="/" className="font-semibold relative group">
+            Home
+          </Link>
+          {['About', 'Attorneys', 'Practice Areas', 'Blog', 'Contact'].map((item, idx) => (
             <Link
               key={idx}
               href={item === 'Practice Areas' ? '/#practice-areas' : `/${item.toLowerCase().replace(' ', '')}`}
@@ -41,7 +44,10 @@ export default function Header() {
       {/* Mobile Nav Links */}
       {menuOpen && (
         <div className="md:hidden mt-4 px-4 py-4 bg-gray-50 rounded-lg text-[#230562] space-y-4 transition-all">
-          {['Home', 'About', 'Attorneys', 'Practice Areas', 'Blog', 'Contact'].map((item, idx) => (
+          <Link href="/" className="font-semibold block">
+            Home
+          </Link>
+          {['About', 'Attorneys', 'Practice Areas', 'Blog', 'Contact'].map((item, idx) => (
             <Link
               key={idx}
               href={item === 'Practice Areas' ? '/#practice-areas' : `/${item.toLowerCase().replace(' ', '')}`}
