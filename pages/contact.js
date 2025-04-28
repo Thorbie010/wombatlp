@@ -22,7 +22,7 @@ const Contact = () => {
     <Layout>
       <div className="bg-gray-50 py-20 px-4 min-h-screen">
         <Head>
-          <title>Honoredge Legal Practices | Contact Us</title>
+          <title>Honoredge Legal Practice | Contact Us</title>
         </Head>
         <div className="max-w-7xl mx-auto space-y-16">
           {/* Header */}
@@ -56,7 +56,7 @@ const Contact = () => {
                   <h3 className="font-semibold text-gray-800 text-lg">Our Office</h3>
                   <p className="text-gray-600 text-sm">
                     23 Omoba Olukolu Street,<br />
-                    Igbo Efon Eti-Osa Local Government Area,<br />
+                    Igbo-Efon Eti-Osa Local Government Area,<br />
                     Lagos, Nigeria.
                   </p>
                 </div>

@@ -7,29 +7,29 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-        <title>Honoredge Legal Practices | Trusted Legal Advisors</title>
+        <title>Honoredge Legal Practice | Trusted Legal Advisors</title>
         <meta
           name="description"
-          content="Honoredge Legal Practices offers top-tier legal services across multiple practice areas including Corporate Law, Real Estate, and Litigation. Tailored legal solutions for your business and personal needs."
+          content="Honoredge Legal Practice offers top-tier legal services across multiple practice areas including Corporate Law, Real Estate, and Litigation. Tailored legal solutions for your business and personal needs."
         />
 
         {/* Open Graph Meta Tags for Social Media */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Honoredge Legal Practices | Trusted Legal Advisors" />
+        <meta property="og:title" content="Honoredge Legal Practice | Trusted Legal Advisors" />
         <meta
           property="og:description"
-          content="Honoredge Legal Practices offers expert legal services across Corporate Law, Real Estate, Litigation, and more. Get tailored legal solutions today."
+          content="Honoredge Legal Practice offers expert legal services across Corporate Law, Real Estate, Litigation, and more. Get tailored legal solutions today."
         />
         <meta property="og:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
         <meta property="og:url" content="https://www.honoredgelp.vercel.app" />
-        <meta property="og:site_name" content="Honoredge Legal Practices" />
+        <meta property="og:site_name" content="Honoredge Legal Practice" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Honoredge Legal Practices | Trusted Legal Advisors" />
+        <meta name="twitter:title" content="Honoredge Legal Practice | Trusted Legal Advisors" />
         <meta
           name="twitter:description"
-          content="Honoredge Legal Practices offers expert legal services in various fields, providing clients with solutions tailored to their needs."
+          content="Honoredge Legal Practice offers expert legal services in various fields, providing clients with solutions tailored to their needs."
         />
         <meta name="twitter:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
         <meta name="twitter:site" content="@honoredgelp" />
@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              "name": "Honoredge Legal Practices",
+              "name": "Honoredge Legal Practice",
               "url": "https://www.honoredgelp.vercel.app",
               "logo": "https://www.honoredgelp.com/logo.png",
               "description":
@@ -66,7 +66,7 @@ function MyApp({ Component, pageProps }) {
               },
               "sameAs": [
                 "https://twitter.com/honoredgelp",
-                "https://www.linkedin.com/company/honoredgelegalpractices",
+                "https://www.linkedin.com/company/honoredgelegalpractice",
                 "https://www.facebook.com/honoredgelp",
               ],
             }),

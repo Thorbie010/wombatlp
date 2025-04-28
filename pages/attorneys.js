@@ -38,12 +38,12 @@ const Attorneys = () => {
     <Layout >
       <div className="bg-gray-100 min-h-screen py-20 px-4">
         <Head>
-          <title>Honoredge Legal Practices | Attorneys</title>
+          <title>Honoredge Legal Practice | Attorneys</title>
         </Head>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-garamond font-bold font-garamond text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-garamond font-bold text-gray-900 mb-4">
               Meet Our Attorneys
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ const Attorneys = () => {
           </div>
 
           {/* Attorney Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:px-60">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 px-6 lg:px-60">
             {attorneys.map((attorney, i) => (
               <motion.div
                 key={attorney.name}

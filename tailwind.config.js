@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         primary: {
           100: '#fff',
+          200: '#444444',
+          300: '#2D2D2D',
         },
       },
       fontFamily: {

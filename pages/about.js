@@ -1,145 +1,152 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Head from 'next/head'
-import Layout from '../components/Layout'
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Layout from "../components/Layout";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i) => ({
+// Animations
+const slideUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: {
-      delay: i * 0.3,
-      duration: 0.7,
-      ease: 'easeOut',
-    },
+    transition: { delay: i * 0.15, duration: 0.6, ease: 'easeOut' },
   }),
-}
+};
 
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
+  }),
+};
 
-const focusAreas = [
-  {
-    title: 'Immigration',
-    description:
-      'We provide comprehensive legal support for individuals and businesses navigating immigration processes, visa applications, residency, and citizenship matters.',
-  },
-  {
-    title: 'Corporate & Commercial Law',
-    description:
-      'Our firm guides businesses through regulatory compliance, M&A transactions, governance, and commercial contracts, ensuring sustainable growth and legal assurance.',
-  },
-  {
-    title: 'Human Rights & Social Justice',
-    description:
-      'We advocate for individuals facing discrimination, injustice, or human rights violations, ensuring their voices are heard and rights protected.',
-  },
-  {
-    title: 'Real Estate & Construction Law',
-    description:
-      'We provide legal expertise in property transactions, leasing, development, and land disputes, ensuring compliance and protecting your investments.',
-  },
-];
+export default function AboutUs() {
+  const focusAreas = [
+    {
+      title: 'Immigration',
+      description:
+        'We provide comprehensive legal support for individuals and businesses navigating immigration processes, visa applications, residency, and citizenship matters.',
+    },
+    {
+      title: 'Corporate & Commercial Law',
+      description:
+        'Our firm guides businesses through regulatory compliance, M&A transactions, governance, and commercial contracts, ensuring sustainable growth and legal assurance.',
+    },
+    {
+      title: 'Human Rights & Social Justice',
+      description:
+        'We advocate for individuals facing discrimination, injustice, or human rights violations, ensuring their voices are heard and rights protected.',
+    },
+    {
+      title: 'Real Estate & Construction Law',
+      description:
+        'We provide legal expertise in property transactions, leasing, development, and land disputes, ensuring compliance and protecting your investments.',
+    },
+  ];
 
-
-const About = () => {
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen py-20 px-6">
         <Head>
-          <title>Honoredge Legal Practices | About Us</title>
+          <title>Honoredge Legal Practice | About Us</title>
         </Head>
-        <div className="max-w-6xl mx-auto space-y-20">
 
-          {/* Header */}
-          <motion.div
+        <div className="max-w-7xl mx-auto space-y-24">
+
+          {/* Hero Section */}
+          <motion.section
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeUp}
-            custom={0}
+            variants={slideUp}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 font-garamond">About Us</h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              At Honoredge Legal Practices, we are more than a law firm — we are a team of passionate advocates driven by excellence and justice.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 font-garamond">
+              About Honoredge Legal Practice
+            </h1>
+            <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+              More than a law firm — we are passionate advocates driven by excellence, innovation, and justice.
             </p>
-          </motion.div>
+          </motion.section>
 
-          {/* Mission - Vision - Values */}
-          <div className="grid md:grid-cols-3 gap-12">
+          {/* Mission, Vision, Values */}
+          <section className="grid md:grid-cols-3 gap-12">
             {[
               {
-                title: 'Our Mission',
-                text: 'To provide strategic, client-centered legal solutions rooted in integrity, innovation, and professionalism.',
-                image: '/mission.jpg',
+                title: "Our Mission",
+                text: "We are committed to delivering innovative, client-focused legal solutions, grounded in integrity and excellence.",
+                image: "/mission.jpg",
               },
               {
-                title: 'Our Vision',
-                text: 'To be a transformative force in the legal industry by delivering legal services that empower individuals, businesses, and communities.',
-                image: '/vision.jpg',
+                title: "Our Vision",
+                text: "To redefine the legal landscape by empowering individuals and businesses through exceptional advocacy and trusted counsel.",
+                image: "/vision.jpg",
               },
               {
-                title: 'Our Values',
-                text: 'Integrity, Diligence, Excellence, Empathy, and Innovation form the pillars of everything we do.',
-                image: '/values.jpg',
-              },
-            ].map((section, i) => (
+                title: "Our Values",
+                text: "Integrity, diligence, excellence, empathy, and innovation are the core principles that guide every aspect of our practice.",
+                image: "/values.jpg",
+              }
+            ].map((item, i) => (
               <motion.div
-                key={section.title}
+                key={item.title}
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                variants={fadeUp}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                variants={scaleIn}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow"
               >
                 <div className="h-52 relative">
-                  <Image src={section.image} alt={section.title} fill className="object-cover" />
+                  <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800">{section.title}</h3>
-                  <p className="mt-3 text-sm text-gray-600">{section.text}</p>
+                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">{item.title}</h3>
+                  <p className="text-sm text-gray-600">{item.text}</p>
                 </div>
               </motion.div>
             ))}
-          </div>
+          </section>
 
-          {/* Focus Areas */}
-          <motion.div
+          {/* Focus Areas Section */}
+          <motion.section
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeUp}
-            custom={3}
+            variants={slideUp}
             className="text-center"
           >
-            <h2 className="text-3xl font-semibold text-gray-900 font-garamond mb-6">Our Focus Areas</h2>
-            <div className="h-64 w-full relative rounded-2xl overflow-hidden shadow-md mb-10">
-              <Image src='/focus.jpg' alt="Our Practice" fill className="object-cover" />
-            </div>
-          </motion.div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-garamond mb-8">
+              Our Focus Areas
+            </h2>
 
-          <div className="grid md:grid-cols-2 gap-10">
-            {focusAreas.map((area, i) => (
-              <motion.div
-                key={area.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
-              >
-                <h4 className="text-xl font-bold text-primary-300">{area.title}</h4>
-                <p className="mt-2 text-sm text-gray-700">{area.description}</p>
-              </motion.div>
-            ))}
-          </div>
+            <div className="h-72 w-full relative rounded-2xl overflow-hidden shadow-md mb-14">
+              <Image src="/focus.jpg" alt="Our Practice Areas" fill className="object-cover" />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-10">
+              {focusAreas.map((area, i) => (
+                <motion.div
+                  key={area.title}
+                  custom={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={scaleIn}
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
+                >
+                  <h4 className="text-xl font-bold text-primary-300">{area.title}</h4>
+                  <p className="mt-2 text-sm text-gray-700">{area.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+
         </div>
       </div>
     </Layout>
-  )
+  );
 }
-
-export default About

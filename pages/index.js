@@ -18,29 +18,31 @@ const cardVariants = {
 const focusAreas = [
   {
     title: "Entertainment",
-    description: "Legal support for artists, producers, and entertainment companies in contracts and rights management."
+    description: "Providing tailored legal solutions for artists, producers, and entertainment enterprises, with a focus on contracts, rights protection, and industry compliance."
   },
   {
-    title: "Real Estate construction Law",
-    description: "Legal expertise in property transactions, leasing, development, and land disputes."
+    title: "Real Estate Construction Law",
+    description: "Delivering expert legal guidance on property acquisitions, development ventures, leasing, and the resolution of complex land disputes."
   },
   {
     title: "Immigration",
-    description: "Guidance on visas, residency, and citizenship matters for individuals and businesses."
+    description: "Offering strategic support for individuals and businesses navigating visa applications, residency pathways, and citizenship processes."
   },
   {
     title: "Property Succession",
-    description: "Guidance on estate planning, wills, and trusts to ensure your legacy."
+    description: "Ensuring seamless estate transitions through customized estate planning, wills, trusts, and asset protection strategies."
   },
   {
     title: "Commercial Law",
-    description: "Legal guidance on contracts, negotiations, and business transactions."
+    description: "Advising businesses on all aspects of commercial transactions, contractual negotiations, regulatory compliance, and corporate structuring."
   },
   {
     title: "Human Rights Law",
-    description: "Advocacy for individuals facing discrimination, injustice, or human rights violations."
+    description: "Championing the rights of individuals through robust advocacy in matters of discrimination, civil liberties, and human rights enforcement."
   }
 ];
+
+
 
 // Reusable AnimatedCard component
 function AnimatedCard({ title, description, delay }) {
@@ -79,126 +81,121 @@ export default function Home() {
   return (
     <Layout>
       <div className="font-sans text-gray-800">
-      {/* <Head>
-        <title>Honoredge Legal Practices - Trusted Legal Advisors</title>
-        <meta name="description" content="Top-tier legal services tailored to your business and personal needs." />
-        <link rel="icon" href="../public/logo.png" />
-      </Head> */}
         <main className="">
           {/* Hero Section */}
           <section className="relative h-screen w-full">
             <Image
               src="/hero.jpeg"
-              alt="Honoredge Legal Practices Hero Image"
+              alt="Honoredge Legal Practice Hero Image"
               fill
               priority
               className="object-cover object-center z-0"
             />
             <div className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col items-center justify-center text-center text-white px-4">
-              <h2 className="text-4xl font-garamond md:text-5xl font-bold mb-4">Trusted Legal Advisors</h2>
-              <p className="text-xl mb-8 max-w-2xl mx-auto">Honoredge Legal Practices offers top-tier legal services tailored to your business and personal needs.</p>
-              <a href="#contact" className="bg-white text-black border-[#230562] border font-semibold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300">
-                Get in Touch
+              <h1 className="text-5xl md:text-6xl font-garamond font-bold mb-6 leading-tight">
+                Honoredge Legal Practice
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Trusted legal advisors dedicated to protecting your business and personal interests.
+              </p>
+              <a href="#contact" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+                Schedule a Consultation
               </a>
             </div>
           </section>
 
           {/* About Section */}
-          <section id="about" className="py-24 bg-gray-100 px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="mb-6 flex justify-center">
-                <Image
-                  src='/logo.png'
-                  alt="Honoredge Legal Practices Logo"
-                  width={100}
-                  height={100}
-                  className=""
-                />
+          <section id="about" className="py-24 bg-gray-50 px-6">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center">
+                <Image src="/logo.png" alt="Honoredge Logo" width={200} height={200} />
               </div>
-              <h3 className="text-3xl font-garamond font-bold mb-4">About Honoredge Legal Practices</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                At Honoredge Legal Practices, we pride ourselves on delivering strategic legal solutions
-                with integrity, clarity, and dedication. Our seasoned attorneys work closely with
-                clients across a wide range of industries.
-              </p>
+              <div>
+                <h2 className="text-4xl font-garamond font-bold mb-4">About Us</h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  At Honoredge Legal Practice, we deliver strategic and practical legal solutions rooted in integrity and excellence.
+                  Our team of seasoned attorneys collaborates closely with clients across diverse industries to deliver results.
+                </p>
+              </div>
             </div>
           </section>
-          <section className="bg-white flex flex-col lg:flex-row px-4">
-            <div className="max-w-4xl bg-[#230562] mx-auto text-center px-10 py-20">
-              <h3 className="text-3xl font-garamond text-white font-bold mb-4">Why Choose Us?</h3>
-              {/* <h3 className="text-3xl font-bold mb-4 text-center">Our Mission</h3> */}
-              <p className="text-white text-lg leading-relaxed mb-6 text-center">
-                Our mission is to provide exceptional legal services that empower our clients to
-                navigate their legal challenges with confidence. We are committed to understanding
-                our clients' needs and delivering tailored solutions that drive success.
-              </p>
-            </div>
-            <div className="max-w-4xl mx-auto text-center px-10 py-20">
-              <h3 className="text-3xl font-garamond font-bold mb-4">Our Values</h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                We believe in transparency, accountability, and a client-first approach. Our
-                commitment to excellence drives us to achieve the best possible outcomes for our
-                clients.
-              </p>
+
+          {/* Why Choose Us */}
+          <section className="py-24 bg-primary-100 text-black px-6">
+            <div className="max-w-7xl mx-auto text-center">
+              <h2 className="text-4xl font-garamond font-bold mb-12">Why Partner With Us?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="bg-white rounded-lg shadow-lg p-10">
+                  <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    To empower clients by providing top-tier legal services that address challenges with confidence, insight, and strategic clarity.
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg shadow-lg p-10">
+                  <h3 className="text-2xl font-semibold mb-4">Our Values</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Guided by transparency, accountability, and a client-first ethos, we are committed to securing the best outcomes for those we serve.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* Practice Areas */}
-          <section id='practice-areas' className="bg-gray-900 text-white py-20 px-6 md:px-20">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-garamond md:text-5xl font-bold leading-tight">
-                  What we <span className="text-primary-200 italic">focus</span> on
-                </h2>
-                <p className="text-gray-300 mt-4 max-w-xl mx-auto text-base">
-                  Explore our core legal practice areas designed to provide expert solutions tailored to your needs.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section id="practice-areas" className="bg-gray-900 text-white py-24 px-6 md:px-20">
+            <div className="max-w-7xl mx-auto text-center">
+              <h2 className="text-4xl font-garamond md:text-5xl font-bold mb-6">
+                Our <span className="text-primary-200 italic">Areas of Focus</span>
+              </h2>
+              <p className="text-gray-400 text-lg mb-16">
+                Expertise across key fields to meet your unique legal needs.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {focusAreas.map((area, idx) => (
-                  <AnimatedCard
+                  <div
                     key={idx}
-                    title={area.title}
-                    description={area.description}
-                    delay={idx * 0.2}
-                  />
+                    className="bg-gray-800 rounded-lg p-8 hover:bg-gray-700 transition duration-300 shadow-lg"
+                  >
+                    <h4 className="text-xl font-bold mb-4">{area.title}</h4>
+                    <p className="text-gray-300">{area.description}</p>
+                  </div>
                 ))}
               </div>
             </div>
           </section>
-          {/* Testimonials */}
-          <section className="bg-[#e7e3db] py-20 px-6 md:px-16 text-center">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-garamond md:text-5xl font-serif text-gray-900 mb-4">Testimonials from Clients</h2>
-              <p className="text-lg text-gray-700 mb-12">An honest look into how we work</p>
 
+          {/* Testimonials */}
+          <section className="bg-[#e7e3db] py-24 px-6 md:px-16 text-center">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-garamond md:text-5xl font-bold mb-6 text-gray-900">Client Testimonials</h2>
+              <p className="text-lg text-gray-700 mb-16">
+                Hear directly from those we've helped achieve success.
+              </p>
+
+              {/* Testimonials Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {[
                   {
                     name: 'Bukki Adegoke',
-                    quote:
-                      "Working with this team was seamless from start to finish. Their dedication and attention to detail made all the difference in our case."
+                    quote: "Working with Honoredge was seamless. Their dedication and attention to detail were unmatched."
                   },
                   {
                     name: 'Chinedu Silas',
-                    quote:
-                      "They truly listened to our needs and fought for the best outcome. We couldn’t have asked for a better legal partner."
+                    quote: "They listened, strategized, and delivered outstanding results. We couldn’t have asked for better support."
                   },
                   {
                     name: 'Emmanuel Bukola',
-                    quote:
-                      "Professional, responsive, and trustworthy. I always felt confident that my case was in the best hands possible."
+                    quote: "Professional, responsive, and trustworthy. My case was always handled with utmost care."
                   }
                 ].map((testimonial, index) => (
                   <div
                     key={index}
-                    className="bg-white p-8 shadow-md rounded-lg flex flex-col justify-between h-full"
+                    className="bg-white p-8 rounded-lg shadow-md flex flex-col justify-between h-full"
                   >
-                    <div className="text-3xl text-gray-700 mb-4">“</div>
-                    <p className="text-gray-800 text-sm mb-6 leading-relaxed">{testimonial.quote}</p>
+                    <div className="text-4xl text-primary-200 mb-4">“</div>
+                    <p className="text-gray-800 text-sm leading-relaxed mb-6">{testimonial.quote}</p>
                     <hr className="border-t border-gray-300 my-4" />
-                    <p className="italic text-gray-800">- {testimonial.name}</p>
+                    <p className="italic text-gray-700">- {testimonial.name}</p>
                   </div>
                 ))}
               </div>
@@ -206,16 +203,18 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section id="contact" className="bg-white text-black py-24 px-4 text-center">
-            <h3 className="text-3xl font-garamond font-bold mb-4">Let’s Discuss Your Case</h3>
-            <p className="mb-6 max-w-xl mx-auto text-lg">Reach out to our team and get expert advice on how we can help with your legal challenges.</p>
-            <a href="mailto:info@seridanpartners.com" className="bg-white text-blue-800 font-semibold border-[#230562] border py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+          <section id="contact" className="bg-primary-200 text-white py-24 px-4 text-center">
+            <h2 className="text-4xl font-garamond font-bold mb-6">Let's Get Started</h2>
+            <p className="mb-8 text-lg max-w-2xl mx-auto">
+              Ready to take the next step? Contact us today to discuss how we can support your legal journey.
+            </p>
+            <a href="mailto:info@seridanpartners.com" className="bg-white text-primary-200 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
               Contact Us
             </a>
           </section>
-          
         </main>
       </div>
+
     </Layout>
   )
 }
