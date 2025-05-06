@@ -18,32 +18,30 @@ const cardVariants = {
 
 const focusAreas = [
   {
-    title: "Entertainment",
-    description: "Providing tailored legal solutions for artists, producers, and entertainment enterprises, with a focus on contracts, rights protection, and industry compliance."
+    title: "Entertainment Law",
+    description: "Providing comprehensive legal counsel to creatives and entertainment entities in the negotiation, drafting, and enforcement of contracts, intellectual property protection, talent representation, and regulatory compliance across the media and entertainment landscape."
   },
   {
-    title: "Real Estate Construction Law",
-    description: "Delivering expert legal guidance on property acquisitions, development ventures, leasing, and the resolution of complex land disputes."
+    title: "Real Estate & Construction Law",
+    description: "Delivering specialized legal advisory on real property acquisition, development structuring, land use regulation, construction agreements, leasing transactions, and dispute resolution involving land tenure, title, and encumbrances."
   },
   {
-    title: "Immigration",
-    description: "Offering strategic support for individuals and businesses navigating visa applications, residency pathways, and citizenship processes."
+    title: "Immigration Law",
+    description: "Offering strategic legal representation in immigration matters, including visa procurement, permanent residency, citizenship applications, deportation defense, and compliance with immigration statutes and administrative procedures."
   },
   {
-    title: "Property Succession",
-    description: "Ensuring seamless estate transitions through customized estate planning, wills, trusts, and asset protection strategies."
+    title: "Property Succession & Estate Planning",
+    description: "Facilitating the orderly transfer of wealth through tailored estate planning instruments such as wills, trusts, powers of attorney, and succession schemes, while ensuring compliance with probate laws and asset protection protocols."
   },
   {
-    title: "Commercial Law",
-    description: "Advising businesses on all aspects of commercial transactions, contractual negotiations, regulatory compliance, and corporate structuring."
+    title: "Commercial & Corporate Law",
+    description: "Advising corporate entities and entrepreneurs on commercial transactions, shareholder agreements, corporate governance, mergers and acquisitions, regulatory compliance, and legal risk management within the commercial framework."
   },
   {
-    title: "Human Rights Law",
-    description: "Championing the rights of individuals through robust advocacy in matters of discrimination, civil liberties, and human rights enforcement."
+    title: "Human Rights & Public Interest Law",
+    description: "Advocating for the protection and enforcement of fundamental rights and freedoms through litigation, policy advisory, and legal redress in matters involving discrimination, state accountability, and violations of civil and constitutional rights."
   }
 ];
-
-
 
 // Reusable AnimatedCard component
 function AnimatedCard({ title, description, delay }) {
@@ -114,7 +112,7 @@ export default function Home() {
               <div>
                 <h2 className="text-4xl font-garamond font-bold mb-4">About Us</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Honoredge Legal Practice, we deliver strategic and practical legal solutions rooted in integrity and excellence.
+                  At Honoredge Legal Practice, we deliver strategic and practical legal services rooted in integrity and excellence.
                   Our team of seasoned attorneys collaborates closely with clients across diverse industries to deliver results.
                 </p>
               </div>
@@ -239,7 +237,7 @@ export default function Home() {
             <p className="mb-8 text-lg max-w-2xl mx-auto">
               Ready to take the next step? Contact us today to discuss how we can support your legal journey.
             </p>
-            <a href="mailto:info@seridanpartners.com" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+            <a href="mailto:honoredgelp@gmail.com" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
               Contact Us
             </a>
           </section>
