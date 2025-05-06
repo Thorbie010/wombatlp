@@ -2,6 +2,7 @@
 
 import Head from 'next/head'
 import Link from 'next/link'
+import { StarIcon } from '@heroicons/react/24/solid';
 import Layout from '../components/Layout'
 import Image from 'next/image'
 
@@ -124,22 +125,44 @@ export default function Home() {
           <section className="py-24 bg-primary-100 text-black px-6">
             <div className="max-w-7xl mx-auto text-center">
               <h2 className="text-4xl font-garamond font-bold mb-12">Why Partner With Us?</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div className="bg-white rounded-lg shadow-lg p-10">
-                  <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    To empower clients by providing top-tier legal services that address challenges with confidence, insight, and strategic clarity.
-                  </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Card 1 */}
+                <div className="relative rounded-xl overflow-hidden shadow-lg">
+                  <Image 
+                    src="/buildings.png" 
+                    alt="Dispute Resolution" 
+                    width={600} 
+                    height={256} 
+                    className="w-full h-[22rem] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-sm p-4">
+                    <h3 className="text-2xl font-semibold font-garamond mb-4">Our Mission</h3>
+                    <p className="text-sm text-gray-700 text-center mt-2">
+                      To empower clients by providing top-tier legal services that address challenges with confidence, insight, and strategic clarity.
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg shadow-lg p-10">
-                  <h3 className="text-2xl font-semibold mb-4">Our Values</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Guided by transparency, accountability, and a client-first ethos, we are committed to securing the best outcomes for those we serve.
-                  </p>
+
+                {/* Card 2 */}
+                <div className="relative rounded-xl overflow-hidden shadow-lg">
+                  <Image 
+                    src="/tingey.png" 
+                    alt="Corporate & Commercial Law" 
+                    width={600} 
+                    height={256} 
+                    className="w-full h-[22rem] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-sm p-4">
+                    <h3 className="text-2xl font-semibold font-garamond mb-4">Our Values</h3>
+                    <p className="text-sm text-gray-700 text-center mt-2">
+                      Guided by transparency, accountability, and a client-first ethos, we are committed to securing the best outcomes for those we serve.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+
 
           {/* Practice Areas */}
           <section id="practice-areas" className="bg-gray-900 text-white py-24 px-6 md:px-20">
@@ -176,15 +199,15 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {[
                   {
-                    name: 'Bukki Adegoke',
+                    name: 'Bukki Aderogba',
                     quote: "Working with Honoredge was seamless. Their dedication and attention to detail were unmatched."
                   },
                   {
-                    name: 'Chinedu Silas',
+                    name: 'Chinedu Godswill',
                     quote: "They listened, strategized, and delivered outstanding results. We couldn’t have asked for better support."
                   },
                   {
-                    name: 'Emmanuel Bukola',
+                    name: 'Emmanuel Folorunsho',
                     quote: "Professional, responsive, and trustworthy. My case was always handled with utmost care."
                   }
                 ].map((testimonial, index) => (
@@ -194,6 +217,14 @@ export default function Home() {
                   >
                     <div className="text-4xl text-primary-200 mb-4">“</div>
                     <p className="text-gray-800 text-sm leading-relaxed mb-6">{testimonial.quote}</p>
+
+                    {/* ⭐ Star Rating */}
+                    <div className="flex items-center justify-center space-x-1 mb-4" aria-label="5 star rating">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
+                      ))}
+                    </div>
+
                     <hr className="border-t border-gray-300 my-4" />
                     <p className="italic text-gray-700">- {testimonial.name}</p>
                   </div>
@@ -208,7 +239,7 @@ export default function Home() {
             <p className="mb-8 text-lg max-w-2xl mx-auto">
               Ready to take the next step? Contact us today to discuss how we can support your legal journey.
             </p>
-            <a href="mailto:info@seridanpartners.com" className="bg-white text-primary-200 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+            <a href="mailto:info@seridanpartners.com" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
               Contact Us
             </a>
           </section>
