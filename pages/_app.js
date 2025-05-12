@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="Honoredge Legal Practice offers expert legal services across Corporate Law, Real Estate, Litigation, and more. Get tailored legal solutions today."
         />
-        <meta property="og:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
+        <meta property="og:image" content="https://www.honoredgelp.vercel.app/hero.png" />
         <meta property="og:url" content="https://www.honoredgelp.vercel.app" />
         <meta property="og:site_name" content="Honoredge Legal Practice" />
 
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           name="twitter:description"
           content="Honoredge Legal Practice offers expert legal services in various fields, providing clients with solutions tailored to their needs."
         />
-        <meta name="twitter:image" content="https://www.honoredgelp.vercel.app/hero.jpeg" />
+        <meta name="twitter:image" content="https://www.honoredgelp.vercel.app/hero.png" />
         <meta name="twitter:site" content="@honoredgelp" />
 
         {/* Favicon */}
