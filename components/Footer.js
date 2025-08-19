@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <Image
             src={logo}
-            alt="Honoredge Legal Practice Logo"
+            alt="Wombat Legal Practice Logo"
             width={100}
             height={100}
             className="object-contain"
           />
           <h3 className="mt-4 text-2xl font-bold font-garamond tracking-wider leading-tight text-center md:text-left">
-            HONOREDGE LEGAL PRACTICE
+            WOMBAT LEGAL PRACTICE
           </h3>
         </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
             Lagos, Nigeria.
           </address>
           <p className="mt-4 text-lg">Phone: <a href="tel:+2348055438457" className="hover:underline">+234 805 543 8457</a></p>
-          <p className="text-lg">Email: <a href="mailto:honoredgelp@gmail.com" className="hover:underline">honoredgelp@gmail.com</a></p>
+          <p className="text-lg">Email: <a href="mailto:wombatlp@gmail.com" className="hover:underline">wombatlp@gmail.com</a></p>
         </div>
 
         {/* Office Hours */}

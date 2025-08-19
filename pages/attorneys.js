@@ -38,7 +38,7 @@ const Attorneys = () => {
     <Layout >
       <div className="bg-gray-100 min-h-screen py-20 px-4">
         <Head>
-          <title>Honoredge Legal Practice | Attorneys</title>
+          <title>Wombat Legal Practice | Attorneys</title>
         </Head>
         <div className="max-w-7xl mx-auto">
           {/* Header */}

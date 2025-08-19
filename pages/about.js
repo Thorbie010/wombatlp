@@ -51,7 +51,7 @@ export default function AboutUs() {
     <Layout>
       <div className="bg-gray-50 min-h-screen py-20 px-6">
         <Head>
-          <title>Honoredge Legal Practice | About Us</title>
+          <title>Wombat Legal Practice | About Us</title>
         </Head>
 
         <div className="max-w-7xl mx-auto space-y-24">
@@ -65,7 +65,7 @@ export default function AboutUs() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 font-garamond">
-              About Honoredge Legal Practice
+              About Wombat Legal Practice
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
               More than a law firm — we are passionate advocates driven by excellence, innovation, and justice.

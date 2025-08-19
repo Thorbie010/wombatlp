@@ -11,8 +11,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Honoredge Legal Practice Logo" className="h-14 w-auto" />
-          {/* <span className="font-bold hidden md:block text-xl tracking-wide">Honoredge Legal Practice</span> */}
+          <img src="/logo.png" alt="Wombat Legal Practice Logo" className="h-14 w-auto" />
+          {/* <span className="font-bold hidden md:block text-xl tracking-wide">Wombat Legal Practice</span> */}
         </Link>
 
         {/* Desktop Nav */}

@@ -36,7 +36,7 @@ export default function Blog({ posts }) {
   return (
     <Layout>
         <Head>
-          <title>Honoredge Legal Practice | Blog</title>
+          <title>Wombat Legal Practice | Blog</title>
         </Head>
       <div className="max-w-5xl mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-8">Blog Posts</h1>

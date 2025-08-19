@@ -85,14 +85,14 @@ export default function Home() {
           <section className="relative h-screen w-full">
             <Image
               src="/hero.png"
-              alt="Honoredge Legal Practice Hero Image"
+              alt="Wombat Legal Practice Hero Image"
               fill
               priority
               className="object-cover object-center z-0"
             />
             <div className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col items-center justify-center text-center text-white px-4">
               <h1 className="text-5xl md:text-6xl font-garamond font-bold mb-6 leading-tight">
-                Honoredge Legal Practice
+                Wombat Legal Practice
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                 Trusted legal advisors dedicated to protecting your business and personal interests.
@@ -107,12 +107,12 @@ export default function Home() {
           <section id="about" className="py-24 bg-gray-50 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center">
-                <Image src="/logo.png" alt="Honoredge Logo" width={200} height={200} />
+                <Image src="/logo.png" alt="Wombat Logo" width={200} height={200} />
               </div>
               <div>
                 <h2 className="text-4xl font-garamond font-bold mb-4">About Us</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At Honoredge Legal Practice, we deliver strategic and practical legal services rooted in integrity and excellence.
+                  At Wombat Legal Practice, we deliver strategic and practical legal services rooted in integrity and excellence.
                   Our team of seasoned attorneys collaborates closely with clients across diverse industries to deliver results.
                 </p>
               </div>
@@ -198,7 +198,7 @@ export default function Home() {
                 {[
                   {
                     name: 'Bukki Aderogba',
-                    quote: "Working with Honoredge was seamless. Their dedication and attention to detail were unmatched."
+                    quote: "Working with Wombat was seamless. Their dedication and attention to detail were unmatched."
                   },
                   {
                     name: 'Chinedu Godswill',
@@ -237,7 +237,7 @@ export default function Home() {
             <p className="mb-8 text-lg max-w-2xl mx-auto">
               Ready to take the next step? Contact us today to discuss how we can support your legal journey.
             </p>
-            <a href="mailto:honoredgelp@gmail.com" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+            <a href="mailto:wombatlp@gmail.com" className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
               Contact Us
             </a>
           </section>

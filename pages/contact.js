@@ -22,7 +22,7 @@ const Contact = () => {
     <Layout>
       <div className="bg-gray-50 py-20 px-4 min-h-screen">
         <Head>
-          <title>Honoredge Legal Practice | Contact Us</title>
+          <title>Wombat Legal Practice | Contact Us</title>
         </Head>
         <div className="max-w-7xl mx-auto space-y-16">
           {/* Header */}
@@ -66,8 +66,8 @@ const Contact = () => {
                 <Phone className="text-primary-300 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-800 text-lg">Phone</h3>
-                  <p className="text-gray-600 text-sm">+234 805 543 8457</p>
-                  <p className="text-gray-600 text-sm">+234 706 241 0156</p>
+                  <p className="text-gray-600 text-sm">+234 *** *** ****</p>
+                  <p className="text-gray-600 text-sm">+234 *** *** ****</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
                 <Mail className="text-primary-300 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-800 text-lg">Email</h3>
-                  <p className="text-gray-600 text-sm">honoredgelp@gmail.com</p>
+                  <p className="text-gray-600 text-sm">wombatlp@gmail.com</p>
                 </div>
               </div>
             </motion.div>
